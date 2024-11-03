@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.header-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+.sub-header {
+    font-size: 24px;
+    color: #555;
+}
+.address {
+    font-size: 14px;
+    color: #3b3b3b;
+    margin-bottom: 10px;
+}
+hr {
+    border: none;
+    border-top: 3px solid #000;
+    margin: 20px 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid #000;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
