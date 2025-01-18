@@ -1,0 +1,241 @@
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header dan navigasi */
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+header .nav h3 span {
+  color: #e63946;
+}
+
+header .nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header .nav ul li a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+header .nav ul li a:hover {
+  color: #e63946;
+}
+
+main {
+  padding: 2rem;
+}
+
+.content-hero,
+.content-about-me,
+.content-portfolio,
+.content-contact {
+  margin-bottom: 4rem;
+}
+
+/* Hero section */
+.content-hero .hero-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-hero .box-hero-describe {
+  max-width: 50%;
+}
+
+.content-hero .box-hero-image img {
+  width: 300px;
+  border-radius: 50%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.content-hero .box-hero-image img:hover {
+  transform: scale(1.1); /* Perbesar gambar saat hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+.content-hero .box-hero-image img:active {
+  transform: scale(1.1) rotateX(180deg); /* Flip vertikal saat ditekan */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan ekstra */
+}
+
+
+/* About me section */
+.content-about-me .about-me {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content-about-me .image img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.content-about-me .education {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-about-me .education div {
+  text-align: center;
+}
+
+/* Portfolio section */
+.content-portfolio .portfolio {
+  text-align: center;
+}
+
+.content-portfolio .box-portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.content-portfolio .box-portfolio img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+.portfolio-cover-image video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+
+/* Contact section */
+.content-contact {
+  background-color: #333;
+  padding: 50px 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-description,
+.contact-info,
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-description h2 span,
+.contact-info h3,
+.contact-form h3 {
+  color: #e63946;
+}
+
+.contact-description p {
+  line-height: 1.6;
+  color: #555;
+}
+
+.contact-map {
+  margin-top: 20px; /* Memberikan jarak dari elemen di atasnya */
+  background-color: #fff; /* Warna latar belakang putih */
+  padding: 20px; /* Padding di dalam elemen */
+  border-radius: 8px; /* Membuat sudut melengkung */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan */
+}
+
+.contact-map h3 {
+  color: #e63946; /* Warna teks merah sesuai tema */
+  margin-bottom: 10px; /* Jarak bawah dari heading */
+  font-size: 18px; /* Ukuran font heading */
+  text-align: center; /* Pusatkan teks */
+}
+
+.contact-map iframe {
+  width: 100%; /* Lebar penuh untuk responsivitas */
+  height: 350px; /* Tinggi tetap */
+  border: none; /* Menghilangkan border bawaan */
+  border-radius: 8px; /* Sudut iframe melengkung mengikuti tema */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk iframe */
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-info ul li strong {
+  color: #e63946;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form .btn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #e63946;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background-color: #d5273e;
+}
